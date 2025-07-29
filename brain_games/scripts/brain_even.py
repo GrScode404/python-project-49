@@ -2,7 +2,8 @@ from random import randint
 
 import prompt
 
-# from brain_games.cli import welcome_user
+from brain_games.cli import welcome_user
+
 
 
 def is_even(number):
@@ -10,9 +11,10 @@ def is_even(number):
 
 
 def brain_even():
+    name = welcome_user()
     count = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
-
+    
     while count < 3:
         current_number = randint(1, 100)
         print(f'Question: {current_number}')
@@ -42,11 +44,12 @@ def brain_even():
                 else:
                     print(f"'{user_answer}' is wrong answer ;(. "
                           f"Correct answer was 'no'.")
-            print("Let's try again!")
-            return
+            print(f"Let's try again, {name}!")
+            break
 
     if count == 3:
-        print('Congratulations!')
+        print(f'Congratulations, {name}!')
 
 
-brain_even()
+if __name__ == '__brain_even__':
+    brain_even()
