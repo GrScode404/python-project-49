@@ -5,7 +5,6 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-
 def is_even(number):
     return number % 2 == 0
 
@@ -19,31 +18,15 @@ def brain_even():
         current_number = randint(1, 100)
         print(f'Question: {current_number}')
         user_answer = prompt.string('Your answer: ')
-        print(user_answer)
+        correct_answer = 'yes' if is_even(current_number) else 'no'
 
-        if is_even(current_number) and user_answer == 'yes':
+        if user_answer == correct_answer:
             count += 1
-            print('Correct!')
-        elif not is_even(current_number) and user_answer == 'no':
-            count += 1
-            print('Correct!')
+            print('Correct')
 
         else:
-            if user_answer == 'yes':
-                print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-
-            if user_answer == 'no':
-                print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-
-            if user_answer != 'yes' and user_answer != 'no':
-
-                if is_even(current_number):
-                    print(f"'{user_answer}' is wrong answer ;(. "
-                          f"Correct answer was 'yes'.")
-
-                else:
-                    print(f"'{user_answer}' is wrong answer ;(. "
-                          f"Correct answer was 'no'.")
+            print(f'"{user_answer}" is wrong answer ;(. '
+                  f'Correct answer was "{correct_answer}" ')
             print(f"Let's try again, {name}!")
             break
 
@@ -51,5 +34,6 @@ def brain_even():
         print(f'Congratulations, {name}!')
 
 
-if __name__ == '__brain_even__':
+if __name__ == '__main__':
+
     brain_even()
