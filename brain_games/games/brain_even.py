@@ -12,9 +12,10 @@ def is_even(number):
 def brain_even():
     name = welcome_user()
     count = 0
+    win_streak = 3
     print('Answer "yes" if the number is even, otherwise answer "no".')
     
-    while count < 3:
+    while count < win_streak:
         current_number = randint(1, 100)
         print(f'Question: {current_number}')
         user_answer = prompt.string('Your answer: ')
@@ -30,7 +31,7 @@ def brain_even():
             print(f"Let's try again, {name}!")
             break
 
-    if count == 3:
+    if count == win_streak:
         print(f'Congratulations, {name}!')
 
 
