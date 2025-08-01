@@ -7,7 +7,7 @@ from brain_games.cli import welcome_user
 from brain_games.scripts.utils import is_correct_answer
 
 
-def calc():
+def brain_calc():
     name = welcome_user()
     count = 0
     win_streak = 3
@@ -45,7 +45,7 @@ def calc():
 
 if __name__ == '__main__':
 
-    calc()
+    brain_calc()
 
 
 
