@@ -1,11 +1,9 @@
 import operator
-
-from random import randint, choice
+from random import choice, randint
 
 import prompt
 
 from brain_games.cli import welcome_user
-
 from brain_games.scripts.utils import is_correct_answer
 
 
@@ -36,11 +34,11 @@ def calc():
             print('Correct')
 
         else:
+
             print(f'"{user_answer}" is wrong answer ;(. '
                   f'Correct answer was "{correct_answer}" ')
             print(f"Let's try again, {name}!")
             break
-
         if count == win_streak:
             print(f'Congratulations, {name}!')
 
