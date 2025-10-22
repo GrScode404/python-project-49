@@ -1,5 +1,4 @@
 # Brain Games description
-___
 Brain Games is a set of five console games built for educational purposes. Each game poses a challenge that requires basic arithmetic, logic, or number theory skills.
 
 ### Hexlet tests and linter status:
@@ -20,11 +19,17 @@ ___
 ### Installation
 ___
 1. Clone the repository:
-    https://github.com/GrScode404/python-project-49.git
+```
+https://github.com/GrScode404/python-project-49.git
+```
 2. Navigate to the project directory:
-    cd brain-games
+```
+cd brain-games
+```
 3. Install the dependencies using Poetry:
-    make install
+```
+make install
+```
 
 ### Running the Games
 ___
