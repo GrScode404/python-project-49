@@ -1,4 +1,5 @@
-## Brain Games description
+# Brain Games description
+___
 Brain Games is a set of five console games built for educational purposes. Each game poses a challenge that requires basic arithmetic, logic, or number theory skills.
 
 ### Hexlet tests and linter status:
@@ -12,10 +13,12 @@ Brain Games is a set of five console games built for educational purposes. Each 
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=GrScode404_python-project-49)
 
 ### Minimum Requirements
+___
 - Python 3.8+
 - Poetry
 
 ### Installation
+___
 1. Clone the repository:
     https://github.com/GrScode404/python-project-49.git
 2. Navigate to the project directory:
@@ -24,6 +27,7 @@ Brain Games is a set of five console games built for educational purposes. Each 
     make install
 
 ### Running the Games
+___
 The project includes the following games:
 
 Brain Even
@@ -37,34 +41,42 @@ Brain Progression
 Brain Prime
 
 ### Launching a Game
+___
 Brain Even:
-
-  'make brain-even'
-
+```
+make brain-even
+```
 Brain Calc:
-
-  'make brain-calc'
-
+```
+make brain-calc
+```
 Brain GCD:
-
-  'make brain-gcd'
-
+```
+make brain-gcd
+```
 Brain Progression:
-
-  'make brain-progression'
-
+```
+make brain-progression
+```
 Brain Prime:
-
-  'make brain-prime'
+```
+make brain-prime
+```
 
 ### Example Commands
-
+___
 Build the project:
-  'make build'
+```
+make build
+```
 
 Install the package:
 
- 'make install'
+```
+make install
+```
 
 Lint the project:
-'make lint'
+```
+make lint
+```
